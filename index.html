@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"/>
+    <!-- Local Style -->
+    <link rel="stylesheet" href="frontend/css/style.css">
+    <link rel="stylesheet" href="main/css/style.css">
+    <title>Drbot</title>
+</head>
+<body class="poppins">
+    <div class="container">
+        <div class="container-profile-media">
+            <div class="container-profile-picture">
+                <div class="container-profile-camera-icon"><i class="fa-solid fa-camera"></i></div>
+                <img src="assets/profile.jpg">
+            </div>
+            <div id="profile-name" class="container-profile-title"></div>
+            <div id="open-bar-icon" class="container-profile-bar-icon"><i class="fa-solid fa-bars" onclick="actionBar('open-bar')"></i></div>
+            <div id="open-setting-icon" class="container-profile-setting-icon"><i class="fa-solid fa-gear" onclick="actionBar('open-setting')"></i></div>
+        </div>
+        <div id="close-bar" class="container-close-bar"><i class="fa-solid fa-xmark" onclick="actionBar()"></i></div>
+        <div id="box-bar" class="container-profile-bar-open">
+            <div class="menu-bar">Cookies</div>
+            <div class="menu-bar">File Manager</div>
+            <div class="menu-bar">Report Bug</div>
+        </div>
+        <div id="close-setting" class="container-close-setting"><i class="fa-solid fa-xmark" onclick="actionBar()"></i></div>
+        <div id="box-setting" class="container-profile-setting-open">
+            <div class="menu-setting">Settings</div>
+            <div class="menu-setting" onclick="logout()">Log out</div>
+        </div>
+        <div id="information" class="container-profile-info"></div>
+        <div class="container-search-input">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search..." autocomplete="off" autocapitalize="off" autofocus="off" autofill="off" spellcheck="false">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="container-main-menu">
+            <div id="platform" class="container-platform-menu"></div>
+            <div id="bot" class="container-bot-menu"></div>
+        </div>
+        <div id="container-detailed-bot" class="container-detailed-bot inactive"></div>
+    </div>
+    <script src="main/javascript/style.js"></script>
+    <script src="main/javascript/script.js"></script>
+    <script src="frontend/javascript/style.js"></script>
+</body>
+</html>

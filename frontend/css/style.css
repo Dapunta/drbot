@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    cursor: default;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    background-color: black;
+    background-image: url('../../assets/background1.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100dvw;
+    height: 100dvh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
