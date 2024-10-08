@@ -3,11 +3,55 @@
     100% { transform: rotate(360deg); }
 }
 
+@media screen and (max-width: 500px) {
+
 .container-form {
-    background-color: rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(10px);
-    width: 88%;
-    height: 70%;
+    width: 300px;
+    height: 460px;
+}
+
+.container-form h1 {
+    font-size: 36px;
+}
+
+.container-form .description {
+    font-size: 14px;
+}
+
+.container-form .forgot-password,
+.container-form .sign-up,
+.sign-up a {
+    font-size: 12px;
+}
+
+}
+
+@media screen and (min-width: 500px) {
+
+.container-form {
+    width: 400px;
+    height: 520px;
+}
+
+.container-form h1 {
+    font-size: 38px;
+}
+
+.container-form .description {
+    font-size: 15px;
+}
+
+.container-form .forgot-password,
+.container-form .sign-up,
+.sign-up a {
+    font-size: 14px;
+}
+    
+}
+
+.container-form {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     position: absolute;
     left: 50%;
     top: 45%;
@@ -25,7 +69,7 @@
     color: #6d7e8f;
     margin-top: 45px;
     box-sizing: border-box;
-    font-size: 5.8vh;
+    white-space: nowrap;
 }
 
 .container-form .description {
@@ -33,31 +77,28 @@
     margin-top: -10px;
     margin-bottom: 40px;
     line-height: 1.1;
-    font-size: 2.2vh;
     text-align: center;
+    white-space: nowrap;
 }
 
 .container-form .forgot-password {
     color: #617180;
     margin-top: 5px;
-    font-size: 1.8vh;
 }
 
 .container-form .sign-up,
 .sign-up a {
     color: #617180;
     margin-top: 50px;
-    font-size: 1.8vh;
 }
 
 .container-form input {
-    background-color: #fafbff;
     color: #4c5965;
     margin-bottom: 3px;
     width: 260px;
     height: 36px;
     outline: none;
-    border: none;
+    border: solid 1px #aabbca;
     border-radius: 6px;
     box-sizing: border-box;
     padding: 2px 10px 2px 10px;
@@ -69,7 +110,7 @@
 }
 
 .container-form button {
-    background-color: #babfc4;
+    background-color: #98a9b8;
     color: #ffffff;
     font-size: 14px;
     margin-top: 2px;
@@ -84,6 +125,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    cursor: pointer;
+}
+
+.container-form button:hover {
+    background-image: linear-gradient(to top right, #66758e, #8093b3);
 }
 
 .spinner-container {
@@ -110,7 +156,6 @@
 .container-response {
     margin-top: 10px;
     width: 260px;
-    height: 60px;
     line-height: 1.2;
     text-align: center;
     display: flex;
@@ -123,18 +168,21 @@
     width: 100%;
     border: none;
     border-radius: 6px;
-    font-size: 1.7vh;
+    font-size: 12px;
     box-sizing: border-box;
     padding: 10px;
 }
 
-.response-box.success,
+.response-box.success {
+    color: white;
+    background-color: #53ca536e;
+}
+
 .response-box.success a {
     color: white;
-    background-color: #485266;
 }
 
 .response-box.failed {
     color: white;
-    background-color: #854e4e;
+    background-color: #fd434383;
 }

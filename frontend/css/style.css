@@ -9,8 +9,8 @@ body {
 }
 
 .container {
-    background-color: black;
-    background-image: url('../../assets/background1.gif');
+    background-color: rgb(240, 240, 240);
+    /* background-image: url('../../assets/background1.gif'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

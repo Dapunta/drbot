@@ -1,5 +1,4 @@
-api = 'http://127.0.0.1:5000';
-// api = 'https://www.drbot-api.dapuntaratya.com';
+const api = window.location.hostname === '127.0.0.1' ? 'http://127.0.0.1:5000' : 'https://drbot-api.dapuntaratya.com';
 
 // Cookie Handler
 

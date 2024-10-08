@@ -1,5 +1,4 @@
-api = 'http://127.0.0.1:5000';
-// api = 'https://www.drbot-api.dapuntaratya.com';
+api = window.location.hostname === '127.0.0.1' ? 'http://127.0.0.1:5000' : 'https://drbot-api.dapuntaratya.com';
 
 let listBot = [];
 let menu = [];
@@ -80,8 +79,6 @@ function showPlatform() {
         boxPlatform.appendChild(createButton(`button-${item.platform}`, 'platform-button inactive', title(item.platform.replace(/_/g, ' '))));
     });
 }
-
-
 
 const scrollPlatform = document.getElementById('platform');
 let isDown = false;

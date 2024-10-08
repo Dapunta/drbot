@@ -5,6 +5,10 @@ function redirect(route) {
     window.location = url;
 }
 
+function back() {
+    window.history.back();
+}
+
 // Disable All Action
 
 document.addEventListener('contextmenu', function(event) {
@@ -30,5 +34,3 @@ window.visualViewport.addEventListener('resize', function() {
         document.body.style.height = '100vh';
     }
 });
-
-console.log('Test');

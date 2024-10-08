@@ -12,6 +12,7 @@
     <!-- Local Style -->
     <link rel="stylesheet" href="frontend/css/style.css">
     <link rel="stylesheet" href="main/css/style.css">
+    <link rel="stylesheet" href="main/css/styled.css">
     <title>Drbot</title>
 </head>
 <body class="poppins">
@@ -27,7 +28,7 @@
         </div>
         <div id="close-bar" class="container-close-bar"><i class="fa-solid fa-xmark" onclick="actionBar()"></i></div>
         <div id="box-bar" class="container-profile-bar-open">
-            <div class="menu-bar">Cookies</div>
+            <div class="menu-bar" onclick="redirect('/cookies')">Cookies</div>
             <div class="menu-bar">File Manager</div>
             <div class="menu-bar">Report Bug</div>
         </div>
@@ -37,15 +38,17 @@
             <div class="menu-setting" onclick="logout()">Log out</div>
         </div>
         <div id="information" class="container-profile-info"></div>
-        <div class="container-search-input">
-            <input type="text" id="searchInput" class="search-input" placeholder="Search..." autocomplete="off" autocapitalize="off" autofocus="off" autofill="off" spellcheck="false">
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="container-right-desktop">
+            <div class="container-search-input">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search..." autocomplete="off" autocapitalize="off" autofocus="off" autofill="off" spellcheck="false">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="container-main-menu">
+                <div id="platform" class="container-platform-menu"></div>
+                <div id="bot" class="container-bot-menu"></div>
+            </div>
+            <div id="container-detailed-bot" class="container-detailed-bot inactive"></div>
         </div>
-        <div class="container-main-menu">
-            <div id="platform" class="container-platform-menu"></div>
-            <div id="bot" class="container-bot-menu"></div>
-        </div>
-        <div id="container-detailed-bot" class="container-detailed-bot inactive"></div>
     </div>
     <script src="main/javascript/style.js"></script>
     <script src="main/javascript/script.js"></script>
